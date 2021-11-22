@@ -879,7 +879,7 @@ In the default namespace you have access to various callables:
   ``credits``                                                       Python credits string
   ``delattr(obj, attr)``                                            Remove attribute from ``obj`` (``del obj.attr``)
   ``dict([x])``                                                       Create a dictionary from a mapping, iterable of k,v tuples, named parameters, or pass nothing for an empty dictionary
-  ``dir([obj])``                                                    List attributes of ``obj``, or names in current namespace if no ``obj`` provided
+  ``dir([obj])``                                                    List attributes of ``obj``, or names in current namespace if no ``obj`` provided (see ``vars``)
   ``divmod(num, denom)``                                            Return tuple pair of ``num//denom`` and ``num%denom``
   ``enumerate(seq, [start])``                                       Return iterator of index, item tuple pairs. Index begins at ``start`` or ``0`` (default)
   ``eval(source, globals=None, locals=None)``                       Run ``source`` (expression string or result of ``compile``) with globals and locals
@@ -934,7 +934,7 @@ In the default namespace you have access to various callables:
   ``tuple([seq])``                                                  Convert ``seq`` to tuple (empty if missing)
   ``type(name, bases, dict)``                                       Create a new type of ``name``, with base classes ``bases``, and attributes ``dict``
   ``type(obj)``                                                     Return type of ``obj``
-  ``vars([obj])``                                                   Return ``obj.__dict__`` or ``locals()`` if missing
+  ``vars([obj])``                                                   Return ``obj.__dict__`` or ``locals()`` if missing (see ``dir``)
   ``zip(seq1, [seq2, ...], [strict=False])``                        Return iterable of tuples of ``(seq1[0], seq2[0])``, ``(seq1[1], seq2[1])``, ... until shortest sequence (set ``strict=True`` to require all sequences have an equal length)
   ================================================================= ============================================================
 
